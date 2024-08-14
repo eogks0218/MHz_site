@@ -1,0 +1,16 @@
+import "../../scss/pages/MainPage.scss"
+import { Link } from "react-router-dom"
+
+export default function MainPage(){
+
+    return(
+        <div className="MainPage-container">
+            <video autoPlay loop muted src="/videos/main-back.mp4" type="video/mp4" />
+            <Link to='/MHz' className="MainLogo" >
+            </Link>
+            <h3 className="MainPage-description">
+                Touch the logo to go home
+            </h3>
+        </div>
+    )
+}
