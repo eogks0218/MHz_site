@@ -1,4 +1,12 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .Footer-container{
+    font-family: 'GmarketSansMedium';
     position: relative;
     bottom: 0;
     background-color: #26272b;
@@ -15,7 +23,8 @@
         background-size: cover;
         background-position: center;
         width: 200px;
-        height: 200px;
+        height: 100px;
+        margin-right: 50px;
     }
     h6{
         color: #FFF;
