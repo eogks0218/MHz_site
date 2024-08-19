@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/MHz_site/static/css/main.7b146461.css",
+    "main.js": "/MHz_site/static/js/main.148dd5c3.js",
+    "static/js/453.b362dec3.chunk.js": "/MHz_site/static/js/453.b362dec3.chunk.js",
+    "static/media/logo.png": "/MHz_site/static/media/logo.3eb8d5e770028000bcbc.png",
+    "index.html": "/MHz_site/index.html",
+    "main.7b146461.css.map": "/MHz_site/static/css/main.7b146461.css.map",
+    "main.148dd5c3.js.map": "/MHz_site/static/js/main.148dd5c3.js.map",
+    "453.b362dec3.chunk.js.map": "/MHz_site/static/js/453.b362dec3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b146461.css",
+    "static/js/main.148dd5c3.js"
+  ]
+}
