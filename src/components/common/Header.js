@@ -17,7 +17,7 @@ export default function Header(){
                         <Link to="#">성공사례</Link>
                     </li>
                     <li>
-                        <Link to="#">문의하기</Link>
+                        <Link to="/MHz/Contact">문의하기</Link>
                     </li>
                 </ul>
             </nav>
