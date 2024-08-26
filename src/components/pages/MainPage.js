@@ -8,9 +8,6 @@ export default function MainPage(){
             <video autoPlay loop muted src={`${process.env.PUBLIC_URL}/videos/main-back.mp4`} type="video/mp4" />
             <Link to='/MHz' className="MainLogo" >
             </Link>
-            <h3 className="MainPage-description">
-                Touch the logo to go home
-            </h3>
         </div>
     )
 }

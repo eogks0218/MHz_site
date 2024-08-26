@@ -11,6 +11,9 @@ export default function Header(){
             <nav className="Header-menu">
                 <ul>
                     <li>
+                        <Link to="/MHz">회사소개</Link>
+                    </li>
+                    <li>
                         <Link to="#">서비스</Link>
                     </li>
                     <li>

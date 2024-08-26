@@ -18,18 +18,17 @@ export default function Footer(){
                 </div>
                 <div className="Footer-content">
                     <p>경기도 안산시 상록구 해양3로 17 디지털전환허브 1001호</p>
-                    <p>대표 : 맹은경</p>
-                    <p>통신판매업 | 신고번호 : | 사업자등록번호 : XXX</p>
+                    <p>대표 : 맹은경 | 통신판매업 | 신고번호 : | 사업자등록번호 : XXX</p>
                     <p>메일 : contact@mhz@xxxxx</p>
                 </div>
             </div>
             <div className="Footer-menu">
                 <h6>Quick Links</h6>
                 <ul>
-                    <li><Link to="/">Menu 1</Link></li>
-                    <li><Link to="/">Menu 2</Link></li>
-                    <li><Link to="/">Menu 3</Link></li>
-                    <li><Link to="/">Menu 4</Link></li>
+                    <li><Link to="/">회사소개</Link></li>
+                    <li><Link to="/">서비스</Link></li>
+                    <li><Link to="/">성공사례</Link></li>
+                    <li><Link to="/">문의하기</Link></li>
                 </ul>
             </div>
             <div className="Footer-social">

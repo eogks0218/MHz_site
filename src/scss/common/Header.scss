@@ -16,15 +16,15 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
     z-index: 1000;
     .Header-logo{
         background-image: url('../../../public/images/logo.png');
         background-size: cover;
         background-position: center;
-        width: 100px;
-        height: 50px;
+        width: 90px;
+        height: 45px;
         margin-left: 150px;
         cursor: pointer;
     }
@@ -35,15 +35,17 @@
         text-decoration: none;
     }
     .Header-menu{
-        width: calc(90% - 350px);
+        width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
+        justify-content: center;
         ul{
+            width: 75%;
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             li{
-                margin-right: 50px;
+                text-align: center;
                 a{
                     color: #26272B;
                     &:hover{
@@ -54,7 +56,6 @@
         }
     }
     .Header-transition{
-        width: calc(20% - 350px);
         margin-right: 150px;
         ul{
             display: flex;
