@@ -1,12 +1,22 @@
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import "../../scss/pages/MHzHome.scss";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
 import { GrOptimize, GrGrow } from "react-icons/gr";
 import { MdOutlinePublishedWithChanges, MdOutlineHighQuality } from "react-icons/md";
 
 export default function MHzHome() {
+
+    const [isScroll, setIsScroll] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener("scroll", () => {
+            setIsScroll(window.scrollY > 0);
+        });
+    }, [])
+
+
     useEffect(() => {
         const text = '마케팅 "디테일의 차이가 결과의 차이"';
         let index = 0;
@@ -77,7 +87,7 @@ export default function MHzHome() {
 
     return (
         <>
-            <Header />
+            <Header isScroll={isScroll}/>
             <div className="MHzHome-container">
                 <div className="MHzHome-Header">
                     <p>

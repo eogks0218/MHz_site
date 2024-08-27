@@ -56,7 +56,7 @@ export default function ContactPage() {
 
     return (
         <>
-            <Header />
+            <Header isScroll={true}/>
             <div className="ContactPage-Container">
                 <div
                     ref={titleRef}
