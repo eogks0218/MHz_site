@@ -10,6 +10,10 @@ export default function MHzHome() {
 
     const [isScroll, setIsScroll] = useState(false);
 
+    useEffect(()=> {
+        window.scrollTo(0, 0);
+    }, [])
+
     useEffect(() => {
         window.addEventListener("scroll", () => {
             setIsScroll(window.scrollY > 0);
