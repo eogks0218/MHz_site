@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import "../../scss/common/Header.scss";
-import { useEffect } from "react";
 
 export default function Header(props){
 
@@ -17,9 +16,9 @@ export default function Header(props){
                         <Link to="/MHz">회사소개</Link>
                     </li>
                     <li className="mainMenu-li">
-                        <Link to="#">서비스</Link>
+                        <Link to="/MHz/ServiceCV">서비스</Link>
                         <ul className="subMenu-ul">
-                            <li className="subMenu-li"><Link to="">카페, 커뮤니티 바이럴</Link></li>
+                            <li className="subMenu-li"><Link to="/MHz/ServiceCV">카페, 커뮤니티 바이럴</Link></li>
                             <li className="subMenu-li"><Link to="">네이버, 쿠팡, 오늘의집</Link></li>
                         </ul>
                     </li>

@@ -2,8 +2,8 @@ import Header from "../common/Header";
 import Footer from "../common/Footer";
 import "../../scss/pages/ContactPage.scss";
 import { useState, useEffect } from "react";
-import { FaChevronDown } from "react-icons/fa";
-import ContactForm from "../ContactForm";
+import ContactForm from "../Contact/ContactForm";
+import DownBtn from "../common/DownBtn";
 
 export default function ContactPage() {
     const [index, setIndex] = useState(0);
@@ -17,17 +17,6 @@ export default function ContactPage() {
         window.addEventListener("scroll", () => {
             setIsScroll(window.scrollY > 0);
         });
-    }, [])
-
-    const scrollToPosition = (multiplier) => {
-        window.scrollTo({
-            top: window.innerHeight * multiplier,
-            behavior: "smooth",
-        });
-    };
-
-    useEffect(()=> {
-        window.scrollTo(0, 0);
     }, [])
 
     useEffect(() => {
@@ -96,9 +85,7 @@ export default function ContactPage() {
                             고객사와 함께한 업계 1등 바이럴 마케팅 전문가 집단입니다.
                         </h5>
                     </div>
-                    <div className="down-btn" onClick={()=> scrollToPosition(1)}>
-                        <FaChevronDown />
-                    </div>
+                    <DownBtn position={1} />
                 </div>
                 <div className="WhereWeWorks">
                     <h1 id="ContactWhere">Where We Works</h1>
@@ -112,9 +99,7 @@ export default function ContactPage() {
                             title="Contact Location Map"
                         />
                     </div>
-                    <div className="down-btn" onClick={()=> scrollToPosition(2)}>
-                        <FaChevronDown />
-                    </div>
+                    <DownBtn position={2} />
                 </div>
                 <div className="ContactUs">
                     <h1 id="ContactUs">Contact Us</h1>

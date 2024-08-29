@@ -25,10 +25,10 @@ export default function Footer(){
             <div className="Footer-menu">
                 <h6>Quick Links</h6>
                 <ul>
-                    <li><Link to="/">회사소개</Link></li>
-                    <li><Link to="/">서비스</Link></li>
+                    <li><Link to="/MHz">회사소개</Link></li>
+                    <li><Link to="/MHz/ServiceCV">서비스</Link></li>
                     <li><Link to="/">성공사례</Link></li>
-                    <li><Link to="/">문의하기</Link></li>
+                    <li><Link to="/MHz/Contact">문의하기</Link></li>
                 </ul>
             </div>
             <div className="Footer-social">
