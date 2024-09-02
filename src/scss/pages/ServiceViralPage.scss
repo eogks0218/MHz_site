@@ -215,7 +215,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #F5F7F8;
         position: relative;
         .CV-title-three{
             width: 100%;
@@ -242,5 +241,10 @@
                 }
             }
         }        
+    }
+    .CV-content-four{
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 3em 0;
     }
 }

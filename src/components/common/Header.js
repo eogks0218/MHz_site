@@ -1,12 +1,10 @@
 import { Link } from "react-router-dom";
 import "../../scss/common/Header.scss";
 
-export default function Header(props){
-
-    const { isScroll } = props;
+export default function Header(){
 
     return(
-        <div className={isScroll ? "Header-container HeaderView" : "Header-container"}>
+        <div className="Header-container">
             <Link to="/">
                 <div className="Header-logo" />
             </Link>
@@ -19,7 +17,7 @@ export default function Header(props){
                         <Link to="/MHz/ServiceCV">서비스</Link>
                         <ul className="subMenu-ul">
                             <li className="subMenu-li"><Link to="/MHz/ServiceCV">카페, 커뮤니티 바이럴</Link></li>
-                            <li className="subMenu-li"><Link to="">네이버, 쿠팡, 오늘의집</Link></li>
+                            <li className="subMenu-li"><Link to="/MHz/ServiceNCH">네이버, 쿠팡, 오늘의집</Link></li>
                         </ul>
                     </li>
                     <li className="mainMenu-li">

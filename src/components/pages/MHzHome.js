@@ -9,23 +9,15 @@ import DownBtn from "../common/DownBtn";
 
 export default function MHzHome() {
 
-    const [isScroll, setIsScroll] = useState(false);
-
     useEffect(()=> {
         window.scrollTo(0, 0);
-    }, [])
-
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setIsScroll(window.scrollY > 0);
-        });
     }, [])
 
 
     useEffect(() => {
         const text = '마케팅 "디테일의 차이가 결과의 차이"';
         let index = 0;
-        const speed = 150;
+        const speed = 120;
 
         function type() {
             const holderElement = document.getElementById("holder");
@@ -85,7 +77,7 @@ export default function MHzHome() {
 
     return (
         <>
-            <Header isScroll={isScroll}/>
+            <Header />
             <div className="MHzHome-container">
                 <div className="MHzHome-Header">
                     <p>

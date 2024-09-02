@@ -7,16 +7,9 @@ import DownBtn from "../common/DownBtn";
 
 export default function ContactPage() {
     const [index, setIndex] = useState(0);
-    const [isScroll, setIsScroll] = useState(false);
 
     useEffect(()=> {
         window.scrollTo(0, 0);
-    }, [])
-
-    useEffect(() => {
-        window.addEventListener("scroll", () => {
-            setIsScroll(window.scrollY > 0);
-        });
     }, [])
 
     useEffect(() => {
@@ -71,7 +64,7 @@ export default function ContactPage() {
 
     return (
         <>
-            <Header isScroll={isScroll}/>
+            <Header />
             <div className="ContactPage-Container">
                 <div className="ContactPage-Title" >
                     <div className="ContactHeader">

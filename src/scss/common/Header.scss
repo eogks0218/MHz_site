@@ -19,8 +19,7 @@
     justify-content: space-around;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .2);
     z-index: 1000;
-    opacity: 0;
-    transform: translateY(-100px);
+    transform: translateY(0);
     transition: all 1s linear;
     .Header-logo{
         background-image: url('../../../public/images/logo.png');
@@ -111,10 +110,5 @@
                 }
             }
         }
-    }
-    &.HeaderView{
-        opacity: 1;
-        transform: translateY(0);
-        height: 80px;
     }
 }
