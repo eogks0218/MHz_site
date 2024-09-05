@@ -1,16 +1,25 @@
 {
   "files": {
-    "main.css": "/MHz_site/static/css/main.9a00d396.css",
-    "main.js": "/MHz_site/static/js/main.7d4a36c5.js",
+    "main.css": "/MHz_site/static/css/main.f5210935.css",
+    "main.js": "/MHz_site/static/js/main.5239bc78.js",
     "static/js/453.b362dec3.chunk.js": "/MHz_site/static/js/453.b362dec3.chunk.js",
+    "static/media/collaboration-back.png": "/MHz_site/static/media/collaboration-back.61e361c50a7073308749.png",
+    "static/media/slider-five.jpg": "/MHz_site/static/media/slider-five.4e2cc822bedd0cdd7efe.jpg",
+    "static/media/slider-three.jpg": "/MHz_site/static/media/slider-three.1622e72e3443785ce3f0.jpg",
+    "static/media/slider-two.jpg": "/MHz_site/static/media/slider-two.b6c2e4d9fcf7d752eea7.jpg",
     "static/media/customer.jpg": "/MHz_site/static/media/customer.14e2ae78d5114e118c7f.jpg",
+    "static/media/slider-four.jpg": "/MHz_site/static/media/slider-four.7055906f1dd21e59f96b.jpg",
+    "static/media/slider-one.jpg": "/MHz_site/static/media/slider-one.897e3be88bcf1c1aa783.jpg",
     "static/media/process-four.jpg": "/MHz_site/static/media/process-four.2dd08b54a1c843d7f965.jpg",
     "static/media/process-six.jpg": "/MHz_site/static/media/process-six.47b2708e94c5edfa3da4.jpg",
+    "static/media/service-1.jpg": "/MHz_site/static/media/service-1.d08f964fba50b6e19262.jpg",
     "static/media/viral-one.png": "/MHz_site/static/media/viral-one.0665781b11b509a6485a.png",
     "static/media/white_back.jpg": "/MHz_site/static/media/white_back.733f2f20adc1417184a7.jpg",
     "static/media/process-seven.jpg": "/MHz_site/static/media/process-seven.c16753455e5a9c05462e.jpg",
     "static/media/process-five.jpg": "/MHz_site/static/media/process-five.306d2466d3e5580c3d97.jpg",
+    "static/media/service-2.jpg": "/MHz_site/static/media/service-2.b499770b24e7c6f82702.jpg",
     "static/media/process-two.png": "/MHz_site/static/media/process-two.f3cc7f6184888eebb9f0.png",
+    "static/media/service-3.jpg": "/MHz_site/static/media/service-3.dd28192a0f1f0539025d.jpg",
     "static/media/process-one.png": "/MHz_site/static/media/process-one.ceba8c755512bcd12a82.png",
     "static/media/process-three.png": "/MHz_site/static/media/process-three.53cf28947206e02d89ff.png",
     "static/media/comunication.png": "/MHz_site/static/media/comunication.2210e41ac264c3561574.png",
@@ -18,13 +27,17 @@
     "static/media/black_logo.png": "/MHz_site/static/media/black_logo.d237262b91ffd6c63fa1.png",
     "static/media/white_logo.png": "/MHz_site/static/media/white_logo.74f38d1d1a86bb82361a.png",
     "static/media/logo.png": "/MHz_site/static/media/logo.3eb8d5e770028000bcbc.png",
+    "static/media/slick.svg": "/MHz_site/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/MHz_site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/MHz_site/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/MHz_site/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MHz_site/index.html",
-    "main.9a00d396.css.map": "/MHz_site/static/css/main.9a00d396.css.map",
-    "main.7d4a36c5.js.map": "/MHz_site/static/js/main.7d4a36c5.js.map",
+    "main.f5210935.css.map": "/MHz_site/static/css/main.f5210935.css.map",
+    "main.5239bc78.js.map": "/MHz_site/static/js/main.5239bc78.js.map",
     "453.b362dec3.chunk.js.map": "/MHz_site/static/js/453.b362dec3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a00d396.css",
-    "static/js/main.7d4a36c5.js"
+    "static/css/main.f5210935.css",
+    "static/js/main.5239bc78.js"
   ]
 }
