@@ -6,6 +6,8 @@ import { useEffect } from "react"
 import "../../scss/pages/ServiceViralPage.scss"
 import Special from "../ServiceViral/Special.js"
 import Process from "../ServiceViral/Process.js"
+import Solution from "../common/Solution.js"
+import CTA from "../common/CTA.js"
 
 export default function ServiceViralPage(){
 
@@ -55,10 +57,9 @@ export default function ServiceViralPage(){
                         <Process />
                     </div>
                 </div>
-                <div className="CV-content-four">
-                    <h4>고객사의 매출 성장을 최우선 목표로 진행 하는 솔루션<br />지속적인 성장과 매출 상승을 위해 각 분야의 전문가들이 최고의 솔루션을 제안 드리며<br />궁극적으로 만족 하실 수 있는 결과를 만들어내고 있습니다.</h4>
-                </div>
             </div>
+            <CTA />
+            <Solution />
             <FooterBox />
             <Footer />
         </>

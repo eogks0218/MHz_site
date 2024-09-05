@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.CTABox{
+    font-family: "GmarketSansMedium";
+    width: 100%;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #021526;
+    color: #FFF;
+    h1{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 50px;
+        letter-spacing: 2px;
+    }
+    .CTA-btn{
+        width: 200px;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #7695FF;
+        color: #FFF;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        a{
+            color: #FFF;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            &:hover{
+                color: #021526;
+            }
+        }
+    }
+}
+
