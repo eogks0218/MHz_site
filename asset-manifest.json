@@ -1,11 +1,14 @@
 {
   "files": {
-    "main.css": "/MHz_site/static/css/main.f5210935.css",
-    "main.js": "/MHz_site/static/js/main.5239bc78.js",
+    "main.css": "/MHz_site/static/css/main.ca9db4af.css",
+    "main.js": "/MHz_site/static/js/main.d9f49156.js",
     "static/js/453.b362dec3.chunk.js": "/MHz_site/static/js/453.b362dec3.chunk.js",
+    "static/media/contact-back2.png": "/MHz_site/static/media/contact-back2.16e799ee1a25a1549239.png",
+    "static/media/success-back.png": "/MHz_site/static/media/success-back.1e4225bc66e6a30bbf72.png",
     "static/media/collaboration-back.png": "/MHz_site/static/media/collaboration-back.61e361c50a7073308749.png",
     "static/media/slider-five.jpg": "/MHz_site/static/media/slider-five.4e2cc822bedd0cdd7efe.jpg",
     "static/media/slider-three.jpg": "/MHz_site/static/media/slider-three.1622e72e3443785ce3f0.jpg",
+    "static/media/service-back.png": "/MHz_site/static/media/service-back.13707711488cf8a5fe54.png",
     "static/media/slider-two.jpg": "/MHz_site/static/media/slider-two.b6c2e4d9fcf7d752eea7.jpg",
     "static/media/customer.jpg": "/MHz_site/static/media/customer.14e2ae78d5114e118c7f.jpg",
     "static/media/slider-four.jpg": "/MHz_site/static/media/slider-four.7055906f1dd21e59f96b.jpg",
@@ -26,18 +29,19 @@
     "static/media/comunication-two.png": "/MHz_site/static/media/comunication-two.ca3aaed7c98d50a61c5e.png",
     "static/media/black_logo.png": "/MHz_site/static/media/black_logo.d237262b91ffd6c63fa1.png",
     "static/media/white_logo.png": "/MHz_site/static/media/white_logo.74f38d1d1a86bb82361a.png",
+    "static/media/review.png": "/MHz_site/static/media/review.34558e87aefd2dfefc3d.png",
     "static/media/logo.png": "/MHz_site/static/media/logo.3eb8d5e770028000bcbc.png",
     "static/media/slick.svg": "/MHz_site/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/MHz_site/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/MHz_site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/MHz_site/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MHz_site/index.html",
-    "main.f5210935.css.map": "/MHz_site/static/css/main.f5210935.css.map",
-    "main.5239bc78.js.map": "/MHz_site/static/js/main.5239bc78.js.map",
+    "main.ca9db4af.css.map": "/MHz_site/static/css/main.ca9db4af.css.map",
+    "main.d9f49156.js.map": "/MHz_site/static/js/main.d9f49156.js.map",
     "453.b362dec3.chunk.js.map": "/MHz_site/static/js/453.b362dec3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f5210935.css",
-    "static/js/main.5239bc78.js"
+    "static/css/main.ca9db4af.css",
+    "static/js/main.d9f49156.js"
   ]
 }
