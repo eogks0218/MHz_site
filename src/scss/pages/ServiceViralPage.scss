@@ -21,7 +21,7 @@
     font-family: "GmarketSansMedium";
     width: 100%;
     .down-btn{
-        color: #7695FF;
+        color: #FFBF00;
         position: absolute;
         bottom: 3%;
         transform: translateX(-50%);
@@ -34,16 +34,23 @@
     .CV-content-one{
         height: 100vh;
         width: 100%;
-        background-image: url(../../../public/images/white_back.jpg);
+        background-image: url(../../../public/images/service-back.png);
         background-size: cover;
         background-position: center;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 14vh;
+        padding-top: 17vh;
         .CV-title-one{
             width: 100%;
             margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 1s ease-in-out;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             h1{
                 font-size: 2.5rem;
                 color: #333;
@@ -56,7 +63,7 @@
                     content: "";
                     width: 100px;
                     height: 7px;
-                    background-color: #7695FF;
+                    background-color: #FFBF00;
                     position: absolute;
                     bottom: -10px;
                     right: 50%;
@@ -77,6 +84,14 @@
             align-items: center;
             justify-content: center;
             position: relative;   
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 1s ease-in-out;
+            transition-delay: 1s;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             .CV-description-one-image{
                 background-image: url(../../../public/images/viral-one.png);
                 background-size: cover;
@@ -121,6 +136,13 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 80px;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 1s ease-in-out;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             h1 {
                 font-size: 2.5rem;
                 color: #333;
@@ -132,7 +154,7 @@
                     content: "";
                     width: 100px;
                     height: 7px;
-                    background-color: #7695FF;
+                    background-color: #FFBF00;
                     position: absolute;
                     bottom: -10px;
                     right: 50%;
@@ -144,6 +166,14 @@
             width: 70%;
             display: flex;
             justify-content: space-around;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 1s ease-in-out;
+            transition-delay: 1s;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             .specialBox{
                 display: flex;
                 flex-direction: column;
@@ -222,6 +252,13 @@
             justify-content: center;
             align-items: center;
             margin-bottom: 80px;
+            opacity: 0;
+            transform: translateY(20%);
+            transition: all 1s ease-in-out;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             h1 {
                 font-size: 2.5rem;
                 color: #333;
@@ -233,7 +270,7 @@
                     content: "";
                     width: 100px;
                     height: 7px;
-                    background-color: #7695FF;
+                    background-color: #FFBF00;
                     position: absolute;
                     bottom: -10px;
                     right: 50%;

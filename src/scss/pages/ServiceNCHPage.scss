@@ -21,7 +21,7 @@
     font-family: "GmarketSansMedium";
     width: 100%;
     .down-btn{
-        color: #7695FF;
+        color: #0D7C66;
         position: absolute;
         bottom: 3%;
         transform: translateX(-50%);
@@ -50,11 +50,18 @@
             position: relative;
             margin: 0 auto;
             margin-bottom: 50px;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateX(200px);
+            &.in-view{
+                opacity: 1;
+                transform: translateX(0);
+            }
             &::after{
                 content: "";
                 width: 200px;
                 height: 7px;
-                background-color: #7695FF;
+                background-color: #0D7C66;
                 position: absolute;
                 bottom: -20px;
                 left: 0;
@@ -66,6 +73,14 @@
             margin: 0 auto;
             color: #333;
             font-size: 1.5rem;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateX(200px);
+            transition-delay: 1s;
+            &.in-view{
+                opacity: 1;
+                transform: translateX(0);
+            }
         }
     }
     .ServiceNCH-Challenges{
@@ -80,6 +95,13 @@
         .ServiceNCH-Challenges-title{
             width: 50%;
             position: relative;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateY(50px);
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             h1{
                 font-size: 2.5rem;
                 color: #333;
@@ -92,7 +114,7 @@
                     content: "";
                     width: 100px;
                     height: 7px;
-                    background-color: #7695FF;
+                    background-color: #0D7C66;
                     position: absolute;
                     bottom: -20px;
                     right: 50%;
@@ -115,6 +137,22 @@
                 margin-bottom: 50px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, .2);
                 background-color: #FFF;
+                opacity: 0;
+                transition: all 1s ease-in-out;
+                transform: translateY(50px);
+                &:nth-child(1){
+                    transition-delay: .5s;
+                }
+                &:nth-child(2){
+                    transition-delay: 1s;
+                }
+                &:nth-child(3){
+                    transition-delay: 1.5s;
+                }
+                &.in-view{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
                 h3{
                     text-align: center;
                     font-size: 1.5rem;
@@ -133,6 +171,13 @@
         .ServiceNCH-Service-title{
             width: 50%;
             position: relative;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: translateY(50px);
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             h1{
                 font-size: 2.5rem;
                 color: #333;
@@ -145,7 +190,7 @@
                     content: "";
                     width: 100px;
                     height: 7px;
-                    background-color: #7695FF;
+                    background-color: #0D7C66;
                     position: absolute;
                     bottom: -20px;
                     right: 50%;
@@ -166,6 +211,24 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                opacity: 0;
+                transition: all 1s ease-in-out;
+                &:nth-child(1){
+                    transition-delay:.5s;
+                    transform: translateX(-50px);
+                }
+                &:nth-child(2){
+                    transition-delay: 1s;
+                    transform: translateY(50px);
+                }
+                &:nth-child(3){
+                    transition-delay: 1.5s;
+                    transform: translateX(50px);
+                }
+                &.in-view{
+                    opacity: 1;
+                    transform: translateX(0) translateY(0);
+                }
                 .Service-item-image{
                     width: 80%;
                     height: 80%;
@@ -218,7 +281,7 @@
                     content: "";
                     width: 100px;
                     height: 7px;
-                    background-color: #7695FF;
+                    background-color: #0D7C66;
                     position: absolute;
                     bottom: -20px;
                     right: 50%;

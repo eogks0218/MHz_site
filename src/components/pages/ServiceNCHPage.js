@@ -14,6 +14,25 @@ export default function ServiceNCHPage(){
         window.scrollTo(0, 0);
     }, [])
 
+    useEffect(() => {
+        const NCHs = document.querySelectorAll(".ServiceNCH-title h1, .ServiceNCH-title h5, .ServiceNCH-Challenges-title, .Challenge-item, .ServiceNCH-Service-title, .Service-item")
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            })
+        });
+
+        NCHs.forEach(entry => observer.observe(entry));
+        return() => {
+            NCHs.forEach(entry => observer.unobserve(entry));
+        }
+    }, [])
+
     return(
 
         <>

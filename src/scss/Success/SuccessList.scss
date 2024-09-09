@@ -1,0 +1,53 @@
+.SL-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30vh;
+    .SL-card{
+        display: flex;
+        width: 50%;
+        margin-bottom: 50px;
+        padding: 20px 50px 20px 50px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        background-color: #FFF;
+        opacity: 0;
+        transition: all .5s ease-in-out;
+        &.tabC{
+            flex-direction: row;
+            transform: translateX(-50%);
+            .SL-card-content{
+                justify-content: start;
+            }
+        }
+        &.tabN{
+            flex-direction: row-reverse;
+            transform: translateX(50%);
+            .SL-card-content{
+                justify-content: end;
+            }
+        }
+        &.in-view{
+            transform: translateX(0);
+            opacity: 1;
+        }
+        .SL-card-image{
+            width: 250px;
+            height: 250px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .SL-card-content{
+            width: calc(100% - 300px);
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            font-size: 1.7rem;
+        }
+    }
+}

@@ -7,13 +7,9 @@
 
 .ContactPage-Container{
     font-family: "GmarketSansMedium";
-    .in-view{
-        opacity: 1 !important;
-        transform: translateY(0) !important;
-    }
     .down-btn{
         position: absolute;
-        color: #7695FF;
+        color: #FF204E;
         bottom: 3%;
         cursor: pointer;
         svg{
@@ -25,7 +21,7 @@
         justify-content: center;
         align-items: center;
         height: 100vh;
-        background-image: url(../../../public/images/white_back.jpg);
+        background-image: url(../../../public/images/contact-back2.png);
         background-size: cover;
         background-position: center;
         .down-btn{
@@ -55,11 +51,16 @@
         }
         .ContactHeader{
             width: 100%;
+            height: 100%;
+            padding-top: 30vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             transition: all 2s linear;
             opacity: 0;
+            &.in-view{
+                opacity: 1;
+            }
         }
     }
     .WhereWeWorks{
@@ -74,7 +75,7 @@
         background-color: #FFF;
         h1{
             font-size: 2.5rem;
-            color: #7695FF;
+            color: #FF204E;
             text-align: center;
             width: 70%;
             position: relative;
@@ -82,11 +83,15 @@
             transition: all 1s linear;
             transform: translateY(50px);
             margin-bottom: 50px;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             &::after{
                 content: "";
                 width: 100px;
                 height: 7px;
-                background-color: #7695FF;
+                background-color: #FF204E;
                 position: absolute;
                 bottom: -10px;
                 right: 50%;
@@ -99,7 +104,12 @@
             opacity: 0;
             transition: all 1s linear;
             transform: translateY(50px);
+            transition-delay: 1s;
             margin-bottom: 50px;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .ContactMap{
             width: 50%;
@@ -107,6 +117,11 @@
             opacity: 0;
             transition: all 1s linear;
             transform: translateY(50px);
+            transition-delay: 1.5s;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             margin-bottom: 50px;
             iframe{
                 width: 100%;
@@ -125,7 +140,7 @@
         background-color: #F5F7F8;
         h1{
             font-size: 2.5rem;
-            color: #7695FF;
+            color: #FF204E;
             text-align: center;
             width: 70%;
             position: relative;
@@ -135,11 +150,15 @@
             transition: all 1s linear;
             transform: translateY(50px);
             margin-bottom: 50px;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
             &::after{
                 content: "";
                 width: 100px;
                 height: 7px;
-                background-color: #7695FF;
+                background-color: #FF204E;
                 position: absolute;
                 bottom: -10px;
                 right: 50%;
@@ -152,7 +171,12 @@
             opacity: 0;
             transition: all 1s linear;
             transform: translateY(50px);
+            transition-delay: 1s;
             margin-bottom: 50px;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
         .ContactForm{
             width: 70%;
@@ -160,7 +184,12 @@
             opacity: 0;
             transition: all 1s linear;
             transform: translateY(50px);
+            transition-delay: 1.5s;
             margin-bottom: 50px;
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 }

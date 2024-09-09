@@ -33,14 +33,14 @@
         }
         input:focus,
         textarea:focus {
-            border-color: #7695FF;
+            border-color: #FF204E;
         }
         input:not(:focus) + label,
         textarea:not(:focus) + label{
             transform: translateY(0) translateX(10px);
             font-size: 15px;
             line-height: 3;
-            color: #7695FF;
+            color: #FF204E;
             pointer-events: auto;
         }
         input:valid + label,
@@ -72,7 +72,7 @@
 
     button {
         padding: 10px 20px;
-        background-color: #7695FF;
+        background-color: #FF204E;
         color: #FFF;
         border: none;
         border-radius: 5px;

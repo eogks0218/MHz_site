@@ -5,6 +5,7 @@ import MHzHome from './components/pages/MHzHome';
 import ContactPage from './components/pages/ContactPage';
 import ServiceViralPage from './components/pages/ServiceViralPage';
 import ServiceNCHPage from './components/pages/ServiceNCHPage';
+import { SuccessPage } from './components/pages/SuccessPage';
 
 function App() {
   
@@ -16,6 +17,7 @@ function App() {
         <Route path="/MHz/Contact" element={<ContactPage />} />
         <Route path="/MHz/ServiceCV" element={<ServiceViralPage />} />
         <Route path="/MHz/ServiceNCH" element={<ServiceNCHPage />} />
+        <Route path="/MHz/Success/:tab" element={<SuccessPage />} />
       </Routes>
     </>
   );

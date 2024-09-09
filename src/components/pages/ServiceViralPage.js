@@ -15,6 +15,25 @@ export default function ServiceViralPage(){
         window.scrollTo(0, 0);
     }, [])
 
+    useEffect(() => {
+        const CVs = document.querySelectorAll(".CV-title-one, .CV-description-one, .CV-title-two, .CV-description-two, .CV-title-three, .CV-description-three")
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                } else {
+                    entry.target.classList.remove('in-view');
+                }
+            })
+        });
+
+        CVs.forEach(entry => observer.observe(entry));
+        return() => {
+            CVs.forEach(entry => observer.unobserve(entry));
+        }
+    }, [])
+
     return(
 
         <>

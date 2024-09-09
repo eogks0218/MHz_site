@@ -27,7 +27,7 @@ export default function Footer(){
                 <ul>
                     <li><Link to="/MHz">회사소개</Link></li>
                     <li><Link to="/MHz/ServiceCV">서비스</Link></li>
-                    <li><Link to="/">성공사례</Link></li>
+                    <li><Link to="/MHz/Success/C">성공사례</Link></li>
                     <li><Link to="/MHz/Contact">문의하기</Link></li>
                 </ul>
             </div>

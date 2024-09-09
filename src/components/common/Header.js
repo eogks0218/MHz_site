@@ -21,10 +21,10 @@ export default function Header(){
                         </ul>
                     </li>
                     <li className="mainMenu-li">
-                        <Link to="#">성공사례</Link>
+                        <Link to="/MHz/Success/C">성공사례</Link>
                         <ul className="subMenu-ul">
-                            <li className="subMenu-li"><Link to="">카페, 커뮤니티 바이럴</Link></li>
-                            <li className="subMenu-li"><Link to="">네이버, 쿠팡, 오늘의집</Link></li>
+                            <li className="subMenu-li"><Link to="/MHz/Success/C">카페, 커뮤니티 바이럴</Link></li>
+                            <li className="subMenu-li"><Link to="/MHz/Success/N">네이버, 쿠팡, 오늘의집</Link></li>
                         </ul>
                     </li>
                     <li className="mainMenu-li">
