@@ -25,7 +25,7 @@ export function SuccessPage(){
     }, [SuccessTab])
 
     useEffect(() => {
-        const titles = document.querySelectorAll(".SuccessViral-title h1, .SuccessViral-title h3, .SuccessViral-title h5");
+        const titles = document.querySelectorAll(".SuccessViral-title h1, .SuccessViral-title h3, .SuccessViral-title h5, .Success-Performance h3, .Success-FAQ h1, .FAQ-card");
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
@@ -60,6 +60,34 @@ export function SuccessPage(){
                         <Link to="/MHz/Success/N" className={SuccessTab.tab === "N" && "selectTab"}>네이버, 쿠팡, 오늘의집</Link>
                     </div>
                     <SuccessList tab={SuccessTab.tab} />
+                </div>
+                <div className="Success-content-two">
+                    <div className="Success-Performance">
+                        <h3>4년간 1,000개 이상의 성공적인 캠페인 진행</h3>
+                        <h3>한 달의 스쳐가는 연이 아닌, 오랜기간 함께 성장하는 파트너가 되어드립니다.</h3>
+                        <h3>고객의 니즈에 맞춘 맞춤형 솔루션을 제공합니다.</h3>
+                    </div>
+                </div>
+                <div className="Success-content-three">
+                    <div className="Success-FAQ">
+                        <h1>자주 묻는 질문</h1>
+                        <div className="FAQ-card">
+                            <h3>Q. 어떤 종류의 광고를 진행해주시나요?</h3>
+                            <p>A. 메가헤르츠는 다양한 온라인 광고 채널 (검색광고, 소셜 미디어 광고, 디스플레이 광고 등)을 통해 최적화된 광고 캠페인을 진행해 드립니다. 고객님의 목표와 예산에 맞춰 맞춤형 광고 전략을 수립해 드립니다.</p>
+                        </div>
+                        <div className="FAQ-card">
+                            <h3>Q. 광고 효과를 어떻게 측정하나요?</h3>
+                            <p>A. 메가헤르츠는 클릭률(CTR), 전환율, ROI 등 다양한 지표를 통해 광고 효과를 측정하고, 정기적으로 보고서를 제공해 드립니다.</p>
+                        </div>
+                        <div className="FAQ-card">
+                            <h3>Q. 계약 기간은 어떻게 되나요?</h3>
+                            <p>A. 계약 기간은 고객님의 요구에 따라 유동적으로 설정할 수 있습니다. 일반적으로 3개월 단위로 계약하며, 계약 만료 후에도 자동 연장되지 않으므로 안심하셔도 됩니다.</p>
+                        </div>
+                        <div className="FAQ-card">
+                            <h3>Q. 상담은 어떻게 신청하나요?</h3>
+                            <p>A. 홈페이지 상담 신청 페이지를 통해 간단한 정보를 입력하시면 담당자가 빠르게 연락드립니다.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <CTA />

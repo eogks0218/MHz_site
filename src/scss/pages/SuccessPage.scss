@@ -100,7 +100,7 @@
     .SuccessViral-content-one{
         background-color: #F5F7F8;
         position: relative;
-        padding-bottom: 20vh;
+        padding-bottom: 10vh;
         .SuccessTab{
             position: absolute;
             width: 100%;
@@ -121,6 +121,110 @@
                     font-weight: bold;
                     font-size: 1.3rem;
                     cursor: default;
+                }
+            }
+        }
+    }
+    .Success-content-two{
+        padding: 15vh 0;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../../public/images/success-back-two.png);
+        background-size: cover;
+        background-position: center;
+        .Success-Performance{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 2rem;
+                color: #FFF;
+                margin-bottom: 150px;
+                padding: 20px 40px 20px 40px;
+                border-radius: 100px;
+                background-color: rgba(#1E2A5E, .8);
+                backdrop-filter: blur(20px);
+                transform: translateY(50px);
+                opacity: 0;
+                transition: all 2s ease-in-out;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &.in-view{
+                    opacity: 1 !important;
+                    transform: translateY(0) !important;
+                }
+            }
+        }
+    }
+    .Success-content-three{
+        width: 100%;
+        padding: 10vh 0;
+        background-color: #F5F7F8;
+        .Success-FAQ{   
+            width: 100%;
+            h1{
+                font-size: 2.5rem;
+                text-align: center;
+                width: 70%;
+                position: relative;
+                margin: 0 auto;
+                margin-bottom: 100px;
+                opacity: 0;
+                transform: translateY(50px);
+                transition: all 1s ease-in-out;
+                &.in-view{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                &::after{
+                    content: "";
+                    width: 100px;
+                    height: 7px;
+                    background-color: #1E2A5E;
+                    position: absolute;
+                    bottom: -20px;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+            }
+            .FAQ-card{
+                width: 60%;
+                margin: 0 auto;
+                padding: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 35px;
+                box-shadow: 0 0 20px rgba(#1E2A5E, 0.5);
+                background-color: #FFF;
+                margin-bottom: 50px;
+                opacity: 0;
+                transform: translateY(100px);
+                transition: all .5s ease-in-out;
+                &.in-view{
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                h3{
+                    width: 100%;
+                    font-size: 1.7rem;
+                    padding-bottom: 15px;
+                    margin-bottom: 15px;
+                    border-bottom: 1px solid #333;
+                    letter-spacing: 2px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 1rem;
+                    text-align: left;
+                    padding-bottom: 15px;
+                    letter-spacing: 1px;
                 }
             }
         }
