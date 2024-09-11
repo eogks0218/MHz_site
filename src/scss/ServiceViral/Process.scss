@@ -1,152 +1,83 @@
-.timeline {
-    position: relative;
-    width: 1000px;
-    margin: 0 auto;
-    padding: 1em 0;
-    list-style-type: none;
-    &::before{
-        position: absolute;
-        left: 50%;
-        top: 0;
-        content: ' ';
-        display: block;
-        width: 6px;
-        height: 100%;
-        margin-left: -3px;
-        background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+.process-card{
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 1s ease-in-out;
+    &.in-view{
+        opacity: 1;
+        transform: translateY(0);
     }
-    li{
-        padding: 2em 0;
-        &:nth-child(1){
-            .flag-image{
-                background-image: url(../../../public/images/process-one.png);
-            }
+    .process-card-img{
+        width: 400px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+    }
+    &:nth-child(1){
+        .process-card-img{
+            background-image: url(../../../public/images/process-one.jpg);
         }
-        &:nth-child(2){
-            .flag-image{
-                background-image: url(../../../public/images/process-two.png);
-            }
+    }
+    &:nth-child(3){
+        .process-card-img{
+            background-image: url(../../../public/images/process-two.jpg);
         }
-        &:nth-child(3){
-            .flag-image{
-                background-image: url(../../../public/images/process-three.png);
-                margin-bottom: 10px;
-            }
+    }
+    &:nth-child(5){
+        .process-card-img{
+            background-image: url(../../../public/images/process-three.jpg);
         }
-        &:nth-child(4){
-            .flag-image{
-                background-image: url(../../../public/images/process-four.jpg);
-                margin-bottom: 10px;
-            }
+    }
+    &:nth-child(7){
+        .process-card-img{
+            background-image: url(../../../public/images/process-four.jpg);
         }
-        &:nth-child(5){
-            .flag-image{
-                background-image: url(../../../public/images/process-five.jpg);
-            }
+    }
+    &:nth-child(9){
+        .process-card-img{
+            background-image: url(../../../public/images/process-five.jpg);
         }
-        &:nth-child(6){
-            .flag-image{
-                background-image: url(../../../public/images/process-six.jpg);
-            }
+    }
+    &:nth-child(11){
+        .process-card-img{
+            background-image: url(../../../public/images/process-six.jpg);
         }
-        &:nth-child(7){
-            .flag-image{
-                background-image: url(../../../public/images/process-seven.jpg);
-            }
+    }
+    &:nth-child(13){
+        .process-card-img{
+            background-image: url(../../../public/images/process-seven.jpg);
         }
-        &::after{
-            content: "";
-            display: block;
-            height: 0;
-            clear: both;
-            visibility: hidden;
-        }
-        .flag-wrapper {
-            position: relative;
-            display: inline-block;
+    }
+    .process-card-description{
+        width: 100%;
+        h3{
+            width: max-content;
+            margin: 0 auto;
             text-align: center;
-            .flag-image{
-                background-size: cover;
-                background-position: center;
-                width: 100%;
-                height: 300px;
-                border-radius: 20px 20px 10px 10px;
-            }
-            .flag {
-                display: inline-block;
-                width: 410px;
-                background: rgb(248,248,248);
-                padding: 6px 10px;
-                border-radius: 5px;
-                font-weight: 600;
-                text-align: center;
-                opacity: 0;
-                transition: all 2s linear;
-                &.in-view{
-                    opacity: 1 !important;
-                }
-                &::before{
-                    position: absolute;
-                    top: 50%;
-                    right: -100px;
-                    content: ' ';
-                    display: block;
-                    width: 12px;
-                    height: 12px;
-                    margin-top: -10px;
-                    background: #fff;
-                    border-radius: 10px;
-                    border: 4px solid #FFBF00;
-                    z-index: 10;
-                }
-            }
-        }
-        .direction-l {
-            position: absolute;
-            width: 450px;
-            float: left;
-            .flag{
-                box-shadow: -1px 1px 1px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.5);
-                transform: translateX(0);
-                &::after{
-                    content: "";
-                    position: absolute;
-                    left: 100%;
-                    top: 50%;
-                    height: 0;
-                    width: 0;
-                    margin-top: -8px;
-                    border: solid transparent;
-                    border-left-color: rgb(248,248,248);
-                    border-width: 8px;
-                    pointer-events: none;
-                }
-            }
-        }
-        .direction-r {
-            position: relative;
-            width: 450px;
-            float: right;
-            .flag{
-                box-shadow: 1px 1px 1px rgba(0,0,0,0.5), 0 0 1px rgba(0,0,0,0.5);
-                transform: translateX(0);
-                &::before{
-                    left: -60px;
-                }
-                &::after{
-                    content: "";
-                    position: absolute;
-                    right: 100%;
-                    top: 50%;
-                    height: 0;
-                    width: 0;
-                    margin-top: -8px;
-                    border: solid transparent;
-                    border-right-color: rgb(248,248,248);
-                    border-width: 8px;
-                    pointer-events: none;
-                }
-            }
-        }
+            font-size: 1.2rem;
+            padding: 10px 30px 10px 30px;
+            border-radius: 20px;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+            color: #333;
+        };
+    }
+}
+.process-svg{
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all .5s ease-in-out;
+    &.in-view{
+        opacity: 1;
+        transform: translateY(0);
     }
 }
