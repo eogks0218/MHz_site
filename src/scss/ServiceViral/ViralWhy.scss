@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.Why-title{
+    width: 0;
+    height: 35vh;
+    transition: all 1.5s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+    position: relative;
+    span{
+        font-family: 'InkLipquid', sans-serif;
+    }
+    &.in-view{
+        opacity: 1;
+        width: 100%;
+    }
+}
+
+h2{
+    font-size: 5rem;
+    width: 600px;
+    margin: 0 auto;
+    position: absolute;
+    &.title-first{
+        text-align: left;
+        left: 30%;
+        top: 0
+    }
+    &.title-second{
+        text-align: right;
+        margin-bottom: 100px;
+        text-decoration: underline;
+        text-decoration-color: #C73659;
+        text-decoration-style: wavy;
+        right: 30%;
+        bottom: 0;
+    }
+}
+
+strong{
+    color: #C73659;
+    font-weight: bold;
+}
+
+.Why-description{
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    >div{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        padding: 10px 20px 10px 20px;
+        margin-bottom: 40px;
+        letter-spacing: 1px;
+        line-height: 2;
+        text-align: left;
+        border-left: 15px solid #C73659;
+        opacity: 0;
+        transform: translateX(500px);
+        transition: all 1s ease-in-out;
+        &.in-view{
+            opacity: 1;
+            transform: translateX(0);
+            &.Wd-one{
+                transition-delay: 1s;
+            }
+            &.Wd-two{
+                transition-delay: 2s;
+            }
+        }
+    }
+}

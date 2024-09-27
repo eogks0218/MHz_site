@@ -135,7 +135,6 @@ export default function MHzHome() {
                         <DownBtn position={3} />
                     </div>
                     <div className="two-two">
-                        <h1>How We Work</h1>
                         <div className="two-two-content">
                             <h3>마케팅의 본질은 <span>"소통"</span>이 기본입니다.</h3>
                             <h5>시장에서 기업의 이익과 소비자 가치의 교환이 일어나기 위해서는<br />기업과 소비자가 서로 소통할 수 있어야 합니다.<br /><br />즉, 고객에게 기업의 제품과 서비스를 이해하도록 마케팅이 진행되어야 하는데<br />마케팅 회사가 소통이 안된다면 좋은 결과물은 물론이며, 매출 상승도 절대적으로 불가합니다.</h5>

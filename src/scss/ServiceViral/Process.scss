@@ -1,83 +1,59 @@
+@font-face {
+    font-family: 'InkLipquid';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/InkLipquid.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .process-card{
-    width: 100%;
-    margin-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all 1s ease-in-out;
-    &.in-view{
-        opacity: 1;
-        transform: translateY(0);
-    }
+    height: 100%;
     .process-card-img{
-        width: 400px;
-        height: 250px;
-        background-size: cover;
-        background-position: center;
-        border-radius: 20px;
-        margin-bottom: 30px;
-        box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
-    }
-    &:nth-child(1){
-        .process-card-img{
-            background-image: url(../../../public/images/process-one.jpg);
+        width: 100%;
+        height: 70% !important;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
         }
     }
-    &:nth-child(3){
-        .process-card-img{
-            background-image: url(../../../public/images/process-two.jpg);
-        }
-    }
-    &:nth-child(5){
-        .process-card-img{
-            background-image: url(../../../public/images/process-three.jpg);
-        }
-    }
-    &:nth-child(7){
-        .process-card-img{
-            background-image: url(../../../public/images/process-four.jpg);
-        }
-    }
-    &:nth-child(9){
-        .process-card-img{
-            background-image: url(../../../public/images/process-five.jpg);
-        }
-    }
-    &:nth-child(11){
-        .process-card-img{
-            background-image: url(../../../public/images/process-six.jpg);
-        }
-    }
-    &:nth-child(13){
-        .process-card-img{
-            background-image: url(../../../public/images/process-seven.jpg);
-        }
+    h3{
+        font-size: 1rem;
+        text-align: center;
+        padding: 10px;
+        color: #EEEEEE;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+        font-weight: 200;
     }
     .process-card-description{
-        width: 100%;
         h3{
-            width: max-content;
-            margin: 0 auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        span{
+            padding: 0 20px 0 20px;
+            width: 100%;
             text-align: center;
-            font-size: 1.2rem;
-            padding: 10px 30px 10px 30px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
-            color: #333;
-        };
+            margin-top: 10px;
+            &.process-num{
+                text-align: left;
+                padding: 0;
+                display: block;
+                position: absolute;
+                font-size: 2.3rem;
+                font-family: "InkLipquid";
+                color: #FF204E;
+                margin-right: 10px;
+                line-height: 2;
+            }
+        }
     }
 }
-.process-svg{
-    font-size: 2rem;
-    width: 100%;
-    margin-bottom: 50px;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all .5s ease-in-out;
-    &.in-view{
-        opacity: 1;
-        transform: translateY(0);
-    }
+.slick-dots li button:before{
+    color: #FF204E !important;
+}
+.slick-dots li.slick-active button:before{
+    color: #FF204E !important;
 }

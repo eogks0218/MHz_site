@@ -22,7 +22,7 @@
     transform: translateY(0);
     transition: all 1s linear;
     .Header-logo{
-        background-image: url('../../../public/images/logo.png');
+        background-image: url(../../../public/images/logo.png);
         background-size: cover;
         background-position: center;
         width: 90px;
@@ -60,6 +60,7 @@
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    transition: all 1s linear;
                     &:hover{
                         color: #3366cc;
                     }
@@ -109,6 +110,19 @@
                     color: #3366cc;
                 }
             }
+        }
+    }
+    &.HeaderTop{
+        background-color: transparent;
+        color: #FFF;
+        box-shadow: none;
+        .mainMenu-li{
+            a{
+                color: #FFF !important;
+            }
+        }
+        .subMenu-li a{
+            color: #26272B !important;
         }
     }
 }

@@ -4,13 +4,26 @@ import "../../scss/pages/ContactPage.scss";
 import { useState, useEffect } from "react";
 import ContactForm from "../Contact/ContactForm";
 import DownBtn from "../common/DownBtn";
+import { useLocation } from "react-router-dom";
 
 export default function ContactPage() {
     const [index, setIndex] = useState(0);
+    const location = useLocation();
 
-    useEffect(()=> {
-        window.scrollTo(0, 0);
-    }, [])
+    useEffect(() => {
+        if (location.hash === "#ContactUs") {
+            const element = document.querySelector(".ContactUs");
+            if (element) {
+                window.scrollTo({
+                    top: element.offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        }
+        else{
+            window.scrollTo(0, 0);
+        }
+    }, [location]);
 
     useEffect(() => {
         const speed = 1;

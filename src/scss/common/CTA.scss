@@ -5,41 +5,66 @@
     font-style: normal;
 }
 
-.CTABox{
+.CTA-container{
     font-family: "GmarketSansMedium";
     width: 100%;
-    padding: 10vh 0;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #021526;
+    background-image: url(../../../public/images/dark-sky.jpg);
+    background-size: cover;
+    background-position: center;
     color: #FFF;
-    h1{
-        font-size: 2.5rem;
-        text-align: center;
-        margin-bottom: 50px;
-        letter-spacing: 2px;
-    }
-    .CTA-btn{
-        width: 200px;
-        height: 50px;
-        border-radius: 30px;
-        background-color: #7695FF;
-        color: #FFF;
-        text-align: center;
-        padding: 10px 0;
-        font-size: 1.2rem;
-        letter-spacing: 1px;
-        a{
+    .CTABox{
+        width: 100%;
+        padding: 10vh 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        h3{
+            font-size: 1.2rem;
+            text-align: left;
+            margin-bottom: 50px;
+            letter-spacing: 2px;
+            line-height: 2;
+        }
+        .CTA-btn{
+            width: 200px;
+            height: 50px;
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            border: 3px solid #A91D3A;
+            line-height: 1.5;
             color: #FFF;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            transition: all .5s ease;
+            a{
+                color: #FFF;
+                text-decoration: none;
+                transition: all 0.5s ease;
+                cursor: pointer;
+            }
             &:hover{
-                color: #021526;
+                background-color: #FFF;
+                border: 3px solid #FFF;
+                transform: scale(1.1);
+            }
+            &:hover a{
+                color: #A91D3A;
             }
         }
     }
+    .footerBox{
+        width: 100%;
+        text-align: center;
+        padding: 10vh 0;
+        font-size: 1.5rem;
+        backdrop-filter: blur(5px);
+    }
 }
-
