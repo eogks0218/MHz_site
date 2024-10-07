@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
 import "../../scss/common/Header.scss";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 export default function Header(){
 
-    const [isTop, setIsTop] = useState(false);
+    // const [isTop, setIsTop] = useState(false);
 
-    useEffect(()=>{
-        const scrollHandler = () => {
-            if(window.scrollY < 100) setIsTop(true);
-            else setIsTop(false);
-        }
-        window.addEventListener("scroll", scrollHandler);
-    }, [])
+    // useEffect(()=>{
+    //     const scrollHandler = () => {
+    //         if(window.scrollY < 100) setIsTop(true);
+    //         else setIsTop(false);
+    //     }
+    //     window.addEventListener("scroll", scrollHandler);
+    // }, [])
 
     return(
-        <div className={isTop ? "Header-container HeaderTop" : "Header-container"}>
+        <div className="Header-container">
             <Link to="/">
                 <div className="Header-logo" />
             </Link>

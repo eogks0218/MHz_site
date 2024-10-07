@@ -1,7 +1,7 @@
 import Header from "../common/Header";
 import Footer from "../common/Footer";
 import "../../scss/pages/MHzHome.scss";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { GrOptimize, GrGrow } from "react-icons/gr";
 import { MdOutlinePublishedWithChanges, MdOutlineHighQuality } from "react-icons/md";
 import FooterBox from "../common/FooterBox";
@@ -18,10 +18,18 @@ export default function MHzHome() {
         const text = '마케팅 "디테일의 차이가 결과의 차이"';
         let index = 0;
         const speed = 120;
-
+    
         function type() {
             const holderElement = document.getElementById("holder");
             if (holderElement) {
+                // 이미 타이핑이 끝났다면 중단
+                if (holderElement.textContent === text) return;
+    
+                // 초기화 (애니메이션이 다시 시작할 때를 대비)
+                if (index === 0) {
+                    holderElement.textContent = '';
+                }
+    
                 if (index < text.length) {
                     holderElement.textContent += text.charAt(index);
                     index++;
@@ -31,6 +39,7 @@ export default function MHzHome() {
                 setTimeout(type, 100);
             }
         }
+    
         type();
     }, []);
 
@@ -45,7 +54,8 @@ export default function MHzHome() {
             ".comunication-box", 
             ".two-two h1", 
             ".two-two-content", 
-            ".two-three-content"
+            ".two-three-content",
+            ".underlineBox"
         ];
     
         const observer = new IntersectionObserver(entries => {
@@ -80,11 +90,24 @@ export default function MHzHome() {
             <Header />
             <div className="MHzHome-container">
                 <div className="MHzHome-Header">
-                    <p>
+                    <div className="QCMBox">
+                        <h1 className="QCMQ">
+                            <p>Quality</p>
+                        </h1>
+                        <h1>
+                            <p>+</p>
+                            <p>Creativity</p>
+                        </h1>
+                        <h1>
+                            <p>=</p>
+                            <p>MHz</p>
+                        </h1>
+                        <div className="underlineBox"></div>
+                    </div>
+                    <p className="blinkingP">
                         <span id="holder" />
                         <span id="blinking-cursor" />
                     </p>
-                    <DownBtn position={1} />
                 </div>
                 <div className="MHzHome-Content-One">
                     <h1 id="One-Title">Core Value</h1>
