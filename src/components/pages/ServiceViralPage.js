@@ -14,7 +14,7 @@ export default function ServiceViralPage(){
     }, [])
 
     useEffect(() => {
-        const CVs = document.querySelectorAll(".CV-title-one, .underlineBox, .CV-description-one, .CV-title-two, .CV-description-two, .CV-title-three, .CV-description-three, .CV-why-title h1, .CV-why-item" )
+        const CVs = document.querySelectorAll(".CV-title-one, .underlineBox, .CV-description-one, .CV-title-two, .CV-description-two, .CV-title-three, .CV-description-three, .CV-why-title h1, .Why-description" )
 
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {

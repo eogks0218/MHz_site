@@ -93,6 +93,13 @@ export default function ContactPage() {
                     </div>
                     <DownBtn position={1} />
                 </div>
+                <div className="ContactUs">
+                    <h1 id="ContactUs">Contact Us</h1>
+                    <h5>아래 항목을 작성해 주시면 빠른 시일 내에 답변 드리겠습니다.</h5>
+                    <div className="ContactForm">
+                        <ContactForm />
+                    </div>
+                </div>
                 <div className="WhereWeWorks">
                     <h1 id="ContactWhere">Where We Works</h1>
                     <h5>경기도 안산시 상록구 해양3로 17 디지털전환허브 1001호</h5>
@@ -104,14 +111,6 @@ export default function ContactPage() {
                             referrerpolicy="no-referrer-when-downgrade"
                             title="Contact Location Map"
                         />
-                    </div>
-                    <DownBtn position={2} />
-                </div>
-                <div className="ContactUs">
-                    <h1 id="ContactUs">Contact Us</h1>
-                    <h5>아래 항목을 작성해 주시면 빠른 시일 내에 답변 드리겠습니다.</h5>
-                    <div className="ContactForm">
-                        <ContactForm />
                     </div>
                 </div>
             </div>
