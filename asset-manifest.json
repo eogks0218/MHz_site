@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MHz_site/static/css/main.814ee5a7.css",
-    "main.js": "/MHz_site/static/js/main.787f8500.js",
+    "main.css": "/MHz_site/static/css/main.02f37143.css",
+    "main.js": "/MHz_site/static/js/main.317e3b42.js",
     "static/js/453.b362dec3.chunk.js": "/MHz_site/static/js/453.b362dec3.chunk.js",
     "static/media/contact-back2.png": "/MHz_site/static/media/contact-back2.16e799ee1a25a1549239.png",
     "static/media/process-one.jpg": "/MHz_site/static/media/process-one.8cafc7f2854136faa984.jpg",
@@ -17,6 +17,7 @@
     "static/media/process-seven.jpg": "/MHz_site/static/media/process-seven.df6648f80f2655a1dd72.jpg",
     "static/media/process-five.jpg": "/MHz_site/static/media/process-five.94847a71466d01e85578.jpg",
     "static/media/main-back-1.jpg": "/MHz_site/static/media/main-back-1.54acbbbd97de88d90207.jpg",
+    "static/media/graph1.png": "/MHz_site/static/media/graph1.38d30af29d25308dcd04.png",
     "static/media/white_back.jpg": "/MHz_site/static/media/white_back.733f2f20adc1417184a7.jpg",
     "static/media/comunication.png": "/MHz_site/static/media/comunication.2210e41ac264c3561574.png",
     "static/media/comunication-two.png": "/MHz_site/static/media/comunication-two.ca3aaed7c98d50a61c5e.png",
@@ -29,12 +30,12 @@
     "static/media/slick.ttf": "/MHz_site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/MHz_site/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/MHz_site/index.html",
-    "main.814ee5a7.css.map": "/MHz_site/static/css/main.814ee5a7.css.map",
-    "main.787f8500.js.map": "/MHz_site/static/js/main.787f8500.js.map",
+    "main.02f37143.css.map": "/MHz_site/static/css/main.02f37143.css.map",
+    "main.317e3b42.js.map": "/MHz_site/static/js/main.317e3b42.js.map",
     "453.b362dec3.chunk.js.map": "/MHz_site/static/js/453.b362dec3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.814ee5a7.css",
-    "static/js/main.787f8500.js"
+    "static/css/main.02f37143.css",
+    "static/js/main.317e3b42.js"
   ]
 }
