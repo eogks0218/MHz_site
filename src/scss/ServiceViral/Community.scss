@@ -1,0 +1,84 @@
+.Community_upper_hr{
+    width: 50%;
+    height: 0;
+    margin: 25px auto;
+    border-bottom: 5px solid #C73659;
+}
+.CommunityBox{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    .CommunityList{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .CommunityName{
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+    }
+}
+.Community_center_hr{
+    width: 50%;
+    height: 0;
+    margin: 25px auto;
+    border-bottom: 5px dashed #C73659;;
+}
+.WomanCafeBox{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    .WomanCafeList{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .CommunityName{
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+    }
+}
+.EtcCommunityBox{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h3{
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    .EtcCommunityList{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        .CommunityName{
+            width: 20%;
+            text-align: center;
+            padding: 20px;
+            color: #333;
+        }
+    }
+}

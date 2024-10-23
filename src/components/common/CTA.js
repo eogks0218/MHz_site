@@ -5,6 +5,8 @@ export default function CTA(){
 
     return(
         <div className="CTA-container">
+            <div className="CTA-container-bg" />
+            <div className="CTA-container-Transparency" />
             <div className="CTABox">
                 <h3>
                     고객사의 매출 성장을 위한 최우선 솔루션<br /><br />
@@ -15,9 +17,6 @@ export default function CTA(){
                 <div className="CTA-btn">
                     <Link to="/MHz/Contact#ContactUs">지금 상담받기</Link>
                 </div>
-            </div>
-            <div className="footerBox">
-                <h4>업계에서 가장 오래되고 잘나가는 이유는 반드시 있습니다.<br /><br />향후 몇 개월, 아니 향후 몇 년이 편할 수 있습니다.</h4>
             </div>
         </div>
     )

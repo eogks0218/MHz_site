@@ -7,36 +7,23 @@
 
 
 .Why-title{
-    width: 0;
-    height: 20vh;
+    width: 80%;
     transition: all 1.5s ease-in-out;
     opacity: 0;
     overflow: hidden;
     position: relative;
-    span{
-        font-family: 'InkLipquid', sans-serif;
-    }
+    padding-top: 20px;
+    border-top: 4px solid #C73659;
     &.in-view{
         opacity: 1;
-        width: 100%;
     }
 }
 
-h2{
-    font-size: 5rem;
-    width: 1000px;
+.title-first{
+    font-size: 3rem;
+    width: 100%;
     margin: 0 auto;
-    position: absolute;
-    &.title-first{
-        text-align: left;
-        left: 30%;
-        top: 0
-    }
-}
-
-strong{
-    color: #C73659;
-    font-weight: bold;
+    text-align: center;
 }
 
 .Why-description{
@@ -44,14 +31,6 @@ strong{
     height: 45vh;
     display: flex;
     justify-content: center;
-    opacity: 0;
-    transform: translateX(200px);
-    transition: all 1s ease-in-out;
-    transition-delay: 1s;
-    &.in-view{
-        opacity: 1;
-        transform: translateX(0);
-    }
     >div{
         width: 100%;
         display: flex;
@@ -62,6 +41,20 @@ strong{
         letter-spacing: 1px;
         line-height: 2;
         text-align: left;
+        transition: transform 1s ease-in-out, opacity 1.5s ease-in-out;
+
+        opacity: 0;
+        &:nth-child(1){
+            transform: perspective(800px) rotateY(180deg);
+        }
+        &:nth-child(2){
+            transform: perspective(800px) rotateY(-180deg);
+            transition-delay: .5s;
+        }
+        &.in-view{
+            transform: perspective(800px) rotateY(0deg);
+            opacity: 1;
+        }
     }
 }
 
@@ -76,9 +69,6 @@ strong{
     font-family: inherit;
     max-width: 620px;
     align-self: center;
-    span{
-        color: #e74848;
-    }
 }
 
 /* Blockquote header */
@@ -86,7 +76,7 @@ strong{
     font-family: inherit;
     position: relative; /* for pseudos */
     color: #FFF;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: normal;
     line-height: 1.3;
     margin: 0;
