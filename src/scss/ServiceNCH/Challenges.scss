@@ -1,54 +1,82 @@
-.Challenges-container {
-    width: 100%;
-    height: 100%;
+.Challenges-card{
+    position: relative;
+    width: 60%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    margin: 0 auto;
-
-    .Challenges-image {
-        width: 40%;
-        height: 50vh;
-        background-image: url(../../../public/images/graph1.png);
+    flex-direction: row;
+    align-items: center;;
+    text-align: left;
+    gap: 30px;
+    font-size: 1.2rem;
+    margin-bottom: 100px;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    &:nth-child(even){
+        flex-direction: row-reverse;
+        text-align: right;
+        transform: translateX(-200px);
+        .Challenges-card-description{
+            background-color: #007aff;
+            padding-right: 100px;
+            border-radius: 40px 20px 20px 40px;
+        }
+        .Challenges-card-img{
+            right: 30px;
+        }
+    }
+    &:nth-child(odd){
+        transform: translateX(200px);
+        .Challenges-card-description{
+            background-color: #495057;
+            padding-left: 100px;
+            border-radius: 20px 40px 40px 20px;
+        }
+        .Challenges-card-img{
+            left: 30px;
+        }
+    }
+    &.in-view{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    .Challenges-card-img{
+        width: 90px;
+        height: 90px;
+        position: absolute;
         background-size: cover;
         background-position: center;
-        margin-right: 5%;
     }
-
-    .Challenges-list {
-        width: 40%;
-        height: 50vh;
+    .Challenges-card-description{
+        width: 70%;
+        height: 150px;
+        padding: 30px;
         display: flex;
-        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 30px;
-        font-size: 1.2rem;
+        text-align: right;
     }
-
-    .ChallengesList {
-        opacity: 0;
-        transform: translateY(20px);
-        transition: opacity 0.5s ease, transform 0.5s ease;
-        &:nth-child(2){
-            transition-delay: .5s;
+    &:nth-child(1){
+        .Challenges-card-img{
+            background-image: url(../../../public/images/free-icon-impression-rate-4025244.png);
         }
-        &:nth-child(3){
-            transition-delay: 1s;
+    }
+    &:nth-child(2){
+        .Challenges-card-img{
+            background-image: url(../../../public/images/free-icon-opportunity-4214102.png);
         }
-        &:nth-child(4){
-            transition-delay: 1.5s;
+    }
+    &:nth-child(3){
+        .Challenges-card-img{
+            background-image: url(../../../public/images/free-icon-sales-growth-11485035.png);
         }
-        &:nth-child(5){
-            transition-delay: 2s;
+    }
+    &:nth-child(4){
+        .Challenges-card-img{
+            background-image: url(../../../public/images/free-icon-check-mark-5299035.png);
         }
-        &.in-view {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        p {
-            margin-bottom: 20px;
-            line-height: 1.6;
+    }
+    &:nth-child(5){
+        .Challenges-card-img{
+            background-image: url(../../../public/images/free-icon-magic-wand-3854932.png);
         }
     }
 }

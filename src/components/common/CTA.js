@@ -6,7 +6,6 @@ export default function CTA(){
     return(
         <div className="CTA-container">
             <div className="CTA-container-bg" />
-            <div className="CTA-container-Transparency" />
             <div className="CTABox">
                 <h3>
                     고객사의 매출 성장을 위한 최우선 솔루션<br /><br />

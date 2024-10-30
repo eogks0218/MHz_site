@@ -25,17 +25,18 @@ export default function ViralWhy(){
         <>
             <div className="Why-title">
                 <h2 className="title-first">바이럴 마케팅이 필요한 이유</h2>
+                <div className="title-underline" />
             </div>
             <div className="Why-description">
-                <div class="blockquote-wrapper">
-                    <div class="blockquote">
+                <div className="blockquote-wrapper">
+                    <div className="blockquote">
                         <h1>
                         사람이 모이는 곳에 기회가 있습니다.<br /><br />이런 곳에 노출이 되어야 긍정적인 여론 형성을 통해 브랜드의 긍정적인 인지도 효과 및 매출 증대를 가져옵니다.
                         </h1>
                     </div>
                 </div>
-                <div class="blockquote-wrapper">
-                    <div class="blockquote">
+                <div className="blockquote-wrapper">
+                    <div className="blockquote">
                         <h1>
                         기업의 브랜드 및 제품의 입소문이 가장 대규모로 전파 할 수 있는 공간은 가장 활성화된 대형 카페, 커뮤니티 공간에서의 활동입니다.
                         </h1>

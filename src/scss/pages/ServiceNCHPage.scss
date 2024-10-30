@@ -36,12 +36,53 @@
         width: 100%;
         background-image: url(../../../public/images/collaboration-back.jpg);
         background-size: cover;
-        background-position: center;
+        background-position: top;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         padding-bottom: 10vh;
+        padding-top: 3vh;
+        position: relative;
+        .NCH-title-BG{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .NCH-header-btn{
+            position: absolute;
+            width: 70%;
+            top: 70%;
+            z-index: 3;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            transform: skew(60deg);
+            &.in-view{
+                opacity: 1;
+                transform: skew(0);
+            }
+            a{
+                margin-right: 10px;
+                color: #C73659;
+                font-size: 1.3rem;
+                text-decoration: none;
+                transition: all 0.5s ease-in-out;
+                padding: 20px 50px 20px 50px;
+                border: 3px solid #FFF;
+                color: #FFF;
+                &:nth-child(1){
+                    background-color: #FFF;
+                    color: #000;
+                }
+                &:hover{
+                    background-color: #C73659;
+                    color: #FFF;
+                }
+            }
+        }
         h1{
             font-size: 2.5rem;
             color: #FFF;
@@ -85,9 +126,9 @@
     }
     .ServiceNCH-Challenges{
         width: 100%;
-        height: 100vh;
-        padding-top: 7vh;
+        padding-top: 15vh;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         position: relative;
@@ -96,61 +137,68 @@
         color: #EEEEEE;
     }
     .ServiceNCH-Service{
-        height: 100vh;
         width: 100%;
+        padding: 10vh 0;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         position: relative;
-        background-color: #A91D3A;
-        color: #EEEEEE;
-        .ServiceList{
-            width: 100%;
-            text-align: center;
-            line-height: 2;
-            font-size: 1.5rem;
-            transition: all 1s ease-in-out;
-            opacity: 0;
-            transform: translateX(100px);
-            &:nth-child(2){
-                transition-delay:.5s;
-            }
-            &:nth-child(3){
-                transition-delay: 1s;
-            }
-            &.in-view{
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
+        background-color: #E8E8E8;
+        color: #000;
     }
     .ServiceNCH-vision{
         width: 100%;
-        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url(../../../public/images/slider-three.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .CV-content-three{
+        width: 100%;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        .VisionList{
-            text-align: center;
-            line-height: 2;
+        position: relative;
+        background: linear-gradient(to bottom, #E8E8E8 0%, rgb(169, 29, 58) 200%);;
+        .CV-title-three{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            opacity: 0;
+            transform: translateY(20%);
             transition: all 1s ease-in-out;
-            // opacity: 0;
-            // transform: translateX(100px);
-            // &:nth-child(2){
-            //     transition-delay:.5s;
-            // }
-            // &:nth-child(3){
-            //     transition-delay: 1s;
-            // }
-            // &:nth-child(4){
-            //     transition-delay: 1.5s;
-            // }
-            // &.in-view{
-            //     opacity: 1;
-            //     transform: translateX(0);
-            // }
+            &.in-view{
+                opacity: 1;
+                transform: translateY(0);
+            }
+            h1 {
+                font-size: 2.5rem;
+                color: #000;
+                text-align: center;
+                width: 70%;
+                position: relative;
+                margin-bottom: 0;
+                &::after {
+                    content: "";
+                    width: 100px;
+                    height: 7px;
+                    background-color: #C73659;
+                    position: absolute;
+                    bottom: -10px;
+                    right: 50%;
+                    transform: translateX(50%);
+                }
+            }
         }   
+        .CV-description-three{
+            width: 100%;
+        }     
     }
 }
